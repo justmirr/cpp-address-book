@@ -1,17 +1,30 @@
-This is a program that implements an address book, allowing the user to add, display, edit, search, and delete contact entries. The program uses file handling to store the contact entries in a file named "addressBook.txt".
+1.  This program implements an address book, allowing users to add, display, edit, search, and delete contact entries. 
+    The program uses file handling to store the contact entries in a file named "addressBook.txt".
 
-The program uses a class named "address" to define the contact entry and all its attributes (first name, last name, house number, address line, landmark, city, and contact number), and all the member functions (menu, insert, display, modify, search, and delete).
+2.  The program uses a class named "address" to define the contact entry and all its attributes (first name, last name, house number, address line, landmark, city, and contact number), 
+    and all the member functions (menu, insert, display, modify, search, and delete).
 
-The "menu" function displays the main menu, prompting the user to select one of the available options. The user can add a new contact, display all contacts, edit a contact, search the address book, delete a contact, or exit the program. The program uses a switch statement to execute the corresponding function based on the user's choice.
+3.  The "menu" function displays the main menu, prompting the user to select one of the available options. 
+    The user can add a new contact, display all contacts, edit a contact, search the address book, delete a contact, or exit the program. 
+    The program uses a switch statement to execute the corresponding function based on the user's choice.
 
-The "insert" function prompts the user to enter all the contact details, validating the input using while loops and the "cin.fail" function to ensure that the input is of the correct format and length. The function then opens the "addressBook.txt" file in append mode and writes the contact details to the file.
+4.  The "insert" function prompts the user to enter all the contact details. It validates the input using while loops and the "cin.fail" function to ensure that it is of the correct format and length. 
+    The function then opens the "addressBook.txt" file in append mode and writes the contact details to it.
 
-The "display" function reads the "addressBook.txt" file, displays the contact entries in a formatted manner, and increments a counter to keep track of the total number of contact entries. If the file is empty, the function displays a message indicating that the book is empty.
+5.  The "display" function reads the "addressBook.txt" file, displays the contact entries in a formatted manner, 
+    and increments a counter to keep track of the total number of contact entries. 
+    If the file is empty, the function displays a message indicating that the book is empty.
 
-The "modify" function prompts the user to enter the first and last names of the contact to be edited, and then reads the "addressBook.txt" file to find the contact entry. If the contact is found, the function prompts the user to enter the new contact details, validates the input, and updates the contact entry in the file. If the contact is not found, the function displays a message indicating that the contact does not exist.
+6.  The "modify" function prompts the user to enter the first and last names of the contacts to be edited and then reads the "addressBook.txt" file to find the contact entry. 
+    If the contact is found, the function prompts the user to enter the new contact details, validates the input, and updates the contact entry in the file. 
+    If the contact is not found, the function displays a message indicating that the contact does not exist.
 
-The "search" function prompts the user to enter the first and last names of the contact to be searched, and then reads the "addressBook.txt" file to find the contact entry. If the contact is found, the function displays the contact details in a formatted manner. If the contact is not found, the function displays a message indicating that the contact does not exist.
+7.  The "search" function prompts the user to enter the first and last names of the contacts to be searched and then reads the "addressBook.txt" file to find the contact entry. 
+    If the contact is found, the function displays the contact details in a formatted manner. 
+    If the contact is not found, the function displays a message indicating that the contact does not exist.
 
-The "deleted" function prompts the user to enter the first and last names of the contact to be deleted, and then reads the "addressBook.txt" file to find the contact entry. If the contact is found, the function deletes the contact entry from the file. If the contact is not found, the function displays a message indicating that the contact does not exist.
+8.  The "deleted" function prompts the user to enter the first and last names of the contacts to be deleted and then reads the "addressBook.txt" file to find the contact entry. 
+    If the contact is found, the function deletes the contact entry from the file. 
+    If the contact is not found, the function displays a message indicating that the contact does not exist.
 
 However, the program still needs exception handling for input validation to prevent crashes if the user enters invalid inputs.
